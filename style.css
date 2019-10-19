@@ -1,0 +1,94 @@
+.Telefeed-popupAddChannel_multiselect_wrapper {
+    width: 40%;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid #889195;
+    margin-bottom: 30px;
+}
+
+.Telefeed-popupAddChannel_multiselect_wrapper.--active {
+    border-bottom: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+
+.Telefeed-popupAddChannel_multiselect_wrapper:after {
+        position: absolute;
+        top: 14px;
+        right: 20px;
+        content: "";
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background: transparent url('./arrow-down.svg') 100% 100% no-repeat;
+}
+
+.Telefeed-popupAddChannel_multiselect_wrapper.--active:after {
+        position: absolute;
+        top: 14px;
+        right: 20px;
+        content: "";
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background: transparent url('./arrow-down.svg') 100% 100% no-repeat;
+        transform: rotate(180deg);
+    }
+
+.Telefeed-popupAddChannel_multiselect {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #889195;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.Telefeed-popupAddChannel_multiselect_placeholder {
+    margin-bottom: 12px;
+}
+
+.Telefeed-popupAddChannel_multiselect_checkedBtn {
+    padding: 7px 25px 7px 10px;
+    border: none;
+    border-radius: 4px;
+    background: #F9F9F9 url('./close-blue.svg') calc(100% - 10px) 50% no-repeat;
+    color: #0099DE;
+    margin: 0 10px 10px 0;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.Telefeed-popupAddChannel_multiselectPopup {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    overflow-y: scroll;
+    background-color: #FFFFFF;
+    border: 1px solid #889195;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    left: -1px;
+}
+
+.Telefeed-popupAddChannel_multiselectPopup.--active {
+    display: flex;
+}
+
+.Telefeed-popupAddChannel_multiselectPopup_item {
+    color: #10232B;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 13px 20px;
+    cursor: pointer;
+}
+
+.Telefeed-popupAddChannel_multiselectPopup_item.--checked {
+    padding: 12px 19px;
+    color: #0099DE;
+    background: #D9D9D9 url('./checked-blue.svg') calc(100% - 20px) 50% no-repeat;
+    border: 1px solid #D9D9D9;
+}
